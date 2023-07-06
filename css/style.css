@@ -1,0 +1,463 @@
+body{
+    background-color: aliceblue;
+}
+
+h2{
+    text-align: center;
+    font-size: 49px;
+    padding: 32px;
+}
+
+
+/* HEADER SECTION */
+header {
+color: black;
+background-color: #fff;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height: 64px;
+border-bottom: black;
+
+}
+
+.logo-desktop{
+    
+    display: inline-flex;
+    width: auto;
+    height: 100%;
+    align-items: center;
+    
+}
+
+.logo-desktop img{
+    height: 40px;
+    padding-left: 24px;
+}
+.logo-desktop p{
+    font-size: 20px;
+    height: 32px;
+    color: gray;
+    
+}
+.logo-desktop b{
+    color: black;
+}
+
+nav ul{
+ display: inline-flex;
+ padding-right: 16px;
+ list-style: none;
+}
+
+nav li a{
+    padding: 8px;
+    text-decoration: none;
+
+}
+nav li a:visited{
+    
+    color:black
+}
+
+nav li a:hover{
+    background-color: rgb(164, 150, 150);
+    border-radius: 10px;
+}
+nav li a{
+    padding: 8px;
+    text-decoration: none;
+    
+}
+
+.mobile{
+    display: none;
+}
+
+/* banner section*/
+
+.banner{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: lightgray;
+
+}
+
+.banner .image{
+    width: 60%;
+}
+
+.banner img{
+    width: 94%;
+    height: auto;
+    padding: 32px 3%;
+    
+
+}
+
+.banner .rigthside{
+    width: 40%;
+    display: flex ;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: auto;
+    
+    
+}
+
+.rigthside h2{
+    font-size: 43px;
+    width: 85%;
+    
+    
+    
+}
+.rigthside h4{
+    
+    font-size: 28px;
+    width: 80%;
+    
+    
+}
+ .button{
+    color: #fff;
+    background-color: black;
+    border-radius: 5px;
+    width: 80%;
+    height: 40px;
+    padding: 8px;
+    text-align: center;
+    vertical-align: auto;
+
+ }
+
+ /*    info section*/
+
+ .info {
+    width: 100%;
+    display: flex;
+ }
+
+ .info .leftside{
+    width: 60%;
+    
+ } 
+
+ .info .leftside img {
+    width: 94%;
+    padding: 32px 3%;
+ }
+ .info .leftside h3{
+    font-size: 43px;
+    padding: 0px 3%;
+    width: 94%;
+ }
+
+ .info .leftside p{
+    padding: 0 3%;
+    width: 94%;
+ }
+
+ 
+
+
+ .info .righside{
+    width: 40%;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 16px 0;
+ }
+
+  .microinfo{
+    display: inline-flex;
+    border: solid lightgray 1px;
+    margin: 2px;
+
+ }
+
+ .microinfo .container{
+    width: 35%;
+    
+ }
+ 
+ 
+ .microinfo img{
+    width: 94%;
+    padding: 16px 3%;
+    
+    
+    
+ }
+ .microinfo .letters{
+   width:  65%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   
+   
+ }
+
+ 
+
+ .microinfo h5{
+    
+    font-size: 26px;
+ }
+
+ .microinfo p{
+    
+    font-size: 18px;
+
+ }
+
+ .microinfo a{
+    
+    font-size: 18px;
+ }
+
+/*   COURSES SECTION  */
+.courses{
+    width: 100%;
+    background-color: lightgray;
+}
+ 
+
+ .courses-container {
+    width: 90%;
+    padding: 0 5%;
+    display: flex; 
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    
+
+ }
+
+
+.courses-info{
+    width: 30%;
+    background-color: #fff;
+    margin: 15px;
+    
+}
+
+.courses-info .container{
+    width: 100%;
+    height: auto;
+}
+
+.courses-info img{
+    width: 100%;
+}
+
+.courses-info .letters{
+    padding: 16px;
+}
+
+.letters h5{
+    font-size:  24px;
+    margin: 0;
+    
+}
+
+.letters p{
+    font-size: 16px;
+}
+/* ------------ final info section ----------- */
+.final-info{
+    width: 100%;
+
+}
+.info .leftside video {
+    width: 95%;
+    padding: 32px 3%;
+   
+}
+
+/* -----  Footer ------- */
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+ }
+
+
+
+ /*MEDIUM PAGE (TABLETS ) NOT SPECIFIED BUT NECESSARY*/
+
+ @media only screen and (max-width:950px) and (min-width:651px ) {
+    .rigthside h2{
+        font-size: 28px;
+        
+    }
+    .rigthside h4{
+        font-size: 21px;
+    }
+ }
+
+/* mobile page styles*/
+@media only screen and (max-width: 650px) {
+
+    body{
+        width: 100%
+    }
+    /* header */
+    .logo-desktop{
+        display: none;
+    }
+
+    .desktop{
+        display: none;
+    }
+   
+    .mobile{
+        display: flex;
+        width: 100%;
+        height: auto;
+        
+        
+    }
+
+    .mobile ul{
+        width: 100%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    ul img {
+        height: 42px;
+    }
+    /*  banner in mobile*/
+    .banner  {
+        flex-direction: column;
+    }
+
+    .banner .image{
+        
+        width: 100%;
+    }
+
+    .banner img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        
+    }
+    
+    .banner .rigthside{
+        display: flex ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+       
+        
+        
+    }
+    
+    .rigthside h2{
+        font-size: 45px;
+        
+        
+        
+    }
+    .rigthside h4{
+        
+        font-size: 28px;
+        
+        
+    }
+     .button{
+        color: #fff;
+        background-color: black;
+        border-radius: 5px;
+        width: 80%;
+        height: 40px;
+        padding: 8px;
+        text-align: center;
+        
+    
+     }
+    
+     /*  info section*/
+     section.info .leftside {
+        display: none;
+     }
+
+     .info .righside{
+        width: 100%;
+        
+     }
+
+     .info .microinfo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        
+     }
+
+     .info .container{
+        width: 100%;
+    
+     }
+
+     .info .letters{
+        width: 100%;
+        padding: 16px 32px;
+
+
+     }
+     /* course section*/
+
+     .courses{
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        padding: 0;
+        
+     }
+
+     .courses-container{
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+     }
+
+      h2{
+        font-size: 32px;
+        margin: 32px auto 16px ;
+        padding: 0;
+     }
+
+     .courses-container .course {
+        border: solid lightgray 1px;
+        background-color: lightgray;
+        border-radius: 5px;
+        width: 94%;
+        padding: 16px 3% 24px;
+        font-size: 24px;
+        margin: 8px auto;
+
+
+     }
+
+     /* ------ Final info --------*/
+     .final-info .info .righside {
+        display: none;
+     }
+     .final-info .info .leftside{
+        width: 100%;
+     }
+
+     
+}
