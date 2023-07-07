@@ -388,9 +388,7 @@ footer{
      }
     
      /*  info section*/
-     .info{
-        border: red solid 1px;
-     }
+     
 
      section.info .leftside {
         display: none;
@@ -398,7 +396,7 @@ footer{
 
      .info .righside{
         width: 100%;
-        border: blue solid 1px;
+        
         
      }
 
